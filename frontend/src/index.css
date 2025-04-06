@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  box-sizing: border-box;
+  font-family: Inter;;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --background-hex: #ffffff;
+    --foreground: 0 0% 0%;
+    --foreground-hex: #000000;
+    --card: 0 0% 99%;
+    --card-hex: #fcfcfc;
+    --card-foreground: 0 0% 0%;
+    --card-foreground-hex: #000000;
+    --popover: 0 0% 100%;
+    --popover-hex: #ffffff;
+    --popover-foreground: 230 48% 38%;
+    --popover-foreground-hex: #32418e;
+    --primary: 221 70% 53%;
+    --primary-hex: #3569db;
+    --primary-foreground: 0 0% 100%;
+    --primary-foreground-hex: #ffffff;
+    --secondary: 229 59% 70%;
+    --secondary-hex: #8797e0;
+    --secondary-foreground: 0 0% 0%;
+    --secondary-foreground-hex: #000000;
+    --muted: 0 0% 99%;
+    --muted-hex: #fcfcfc;
+    --muted-foreground: 0 0% 0%;
+    --muted-foreground-hex: #000000;
+    --accent: 41 70% 47%;
+    --accent-hex: #CA9624;
+    --accent-foreground: 0 0% 0%;
+    --accent-foreground-hex: #000000;
+    --destructive: 5 100% 53%;
+    --destructive-hex: #ff2510;
+    --destructive-foreground: 0 0% 0%;
+    --destructive-foreground-hex: #000000;
+    --border: 0 0% 96%;
+    --border-hex: #f5f5f5;
+    --input: 0 0% 96%;
+    --input-hex: #f5f5f5;
+    --ring: 221 70% 53%;
+    --ring-hex: #3569db;
+    --chart-1: 221 70% 53%;
+    --chart-1-hex: #3569db;
+    --chart-2: 281 70% 53%;
+    --chart-2-hex: #a735db;
+    --chart-3: 41 70% 53%;
+    --chart-3-hex: #dba735;
+    --chart-4: 101 70% 53%;
+    --chart-4-hex: #69db35;
+    --chart-5: 41 70% 47%;
+    --chart-5-hex: #CA9624;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --background-hex: #000000;
+    --foreground: 0 0% 100%;
+    --foreground-hex: #ffffff;
+    --card: 0 0% 2%;
+    --card-hex: #050505;
+    --card-foreground: 0 0% 100%;
+    --card-foreground-hex: #ffffff;
+    --popover: 0 0% 0%;
+    --popover-hex: #000000;
+    --popover-foreground: 229 59% 70%;
+    --popover-foreground-hex: #8797e0;
+    --primary: 221 70% 53%;
+    --primary-hex: #3569db;
+    --primary-foreground: 0 0% 100%;
+    --primary-foreground-hex: #ffffff;
+    --secondary: 230 48% 38%;
+    --secondary-hex: #32418e;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-foreground-hex: #ffffff;
+    --muted: 0 0% 2%;
+    --muted-hex: #050505;
+    --muted-foreground: 0 0% 100%;
+    --muted-foreground-hex: #ffffff;
+    --accent: 41 70% 47%;
+    --accent-hex: #CA9624;
+    --accent-foreground: 0 0% 0%;
+    --accent-foreground-hex: #000000;
+    --destructive: 0 100% 47%;
+    --destructive-hex: #f00000;
+    --destructive-foreground: 0 0% 0%;
+    --destructive-foreground-hex: #000000;
+    --border: 0 0% 22%;
+    --border-hex: #373737;
+    --input: 0 0% 22%;
+    --input-hex: #373737;
+    --ring: 221 70% 53%;
+    --ring-hex: #3569db;
+    --chart-1: 221 70% 53%;
+    --chart-1-hex: #3569db;
+    --chart-2: 281 70% 53%;
+    --chart-2-hex: #a735db;
+    --chart-3: 41 70% 53%;
+    --chart-3-hex: #dba735;
+    --chart-4: 101 70% 53%;
+    --chart-4-hex: #69db35;
+    --chart-5: 41 70% 47%;
+    --chart-5-hex: #CA9624;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
